@@ -1,0 +1,23 @@
+{
+  "name": "th2an.cn",
+  "description": "conponents",
+  "main": "",
+  "authors": [
+    "TANYOU <1024074941@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.0",
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2",
+    "less": "^2.7.1"
+  }
+}

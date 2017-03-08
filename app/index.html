@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv = "X-UA-compatible" content="IE-edeg,chrome=1">
+        <title>T's Blog</title>
+        <link rel="stylesheet/less" type="text/css" href="./index.less">
+        <link rel="stylesheet/less" type="text/css" href="../bower_components/bootstrap/less/bootstrap.less">
+    </head>
+    <body >
+        <main>
+            <div id="around" class="around">
+                <div id="lists" class="lists">
+                    <a href="#" name="intro"></a>
+                    <a href="#" name="blog"></a>
+                    <a href="#" name="inspiration"></a>
+                </div>
+            </div>
+            <ul id = "scroll-ul">
+                <li class="intro active" id="intro" data-index="3">
+                    <section class="introBox">
+                        <h1>T's blog</h1>
+                        <p>不再做过去的自己，而去成为真正的自己。</p>
+                        <a target="_blank" href="https://github.com/ytsy/thblog" class="btn  btn-info btn-block btn-lg">
+                           <span class="glyphicon glyphicon-star"></span>
+                           <img src="../images/GitHub_Logo.png" class="githubImg">
+                        </a>
+                        <a target="_blank" href="https://ytsy.github.io" class="btn btn-info btn-block btn-lg">
+                            <span class="glyphicon glyphicon-list-alt"></span>  电子简历
+                        </a>
+                    </section>
+                </li>
+                <li class="blog" id="blog" data-index="2">
+                    <section class="blogBox">
+                        <h1>博采众长，客似云来</h1>
+                        <a href="https://github.com/ytsy/thblog"  class="btn btn-primary btn-lg btn-block">
+                            <span class="glyphicon glyphicon-home"></span>  查看文章
+                        </a>
+                    </section>
+                </li>
+                <li class="inspiration" id="inspiration" data-index="1">
+                    <section>
+
+                    </section>
+                </li>
+            </ul>
+        </main>
+        <script src="../bower_components/requirejs/require.js" data-main="main.js" ></script>
+    </body>
+</html>
