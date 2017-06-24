@@ -30,7 +30,7 @@ define(["jquery"],function($){
         currentSection.classList.add("active");
 
     };
-//添加样式
+    //添加样式
     var addClass = function(tag,className){
         if(tag.className == null){
             tag.className = className;
@@ -39,7 +39,7 @@ define(["jquery"],function($){
             tag.className = newClassName;
         }
     };
-//删除样式
+    //删除样式
     var removeClass = function(tag,className){
         tag.className = tag.className.replace(className,"");
     };
@@ -80,7 +80,7 @@ define(["jquery"],function($){
             }
         }
     })(window);
-//初始化事件
+    //初始化事件
     var onloadF = function(){
         //$("#scroll-ul li").removeClass("test");
         //初始化数据

@@ -1,4 +1,2 @@
 .idea
-node_modules/gulp-*
-node_modules/jshint
-node_modules/.bin
+node_modules
