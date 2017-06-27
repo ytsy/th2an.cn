@@ -1,0 +1,10 @@
+#replace-body .pro-wrap {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.pro-wrap section {
+  margin-top: 20px;
+  border: 1px solid #c2ccd1;
+}

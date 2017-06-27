@@ -27,3 +27,90 @@ a{
   display:table-cell;
   text-align:center;
 }
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  background-color: #ccc;
+  position:relative;
+  padding-top:50px;
+}
+
+nav{
+  position:absolute;
+  left:0;
+  top:0;
+  padding:0 20%;
+  width:100%;
+  height:40px;
+  line-height:40px;
+  z-index:1000;
+  background-color:rgba(52, 152, 219,.7);
+  h1,ul{
+    height:100%;
+  }
+  h1{
+    float:left;
+  }
+  ul{
+    float:right;
+    display:inline-block;
+    li{
+      display:inline-block;
+      height:100%;
+      width:60px;
+      line-height:inherit;
+      list-style-position: inside;
+      a{
+        display:block;
+        width:100%;
+        height:100%;
+        text-align:center;
+        color:#ffffff;
+        font-size:13px;
+        letter-spacing:2px;
+        font-weight:400;
+        font-family:"Microsoft YaHei", "Times New Roman",Georgia,serif;
+      }
+      a:hover{
+        color:#ffffff;
+        text-decoration: none;
+        background-color:rgba(1, 87, 155,1.0);
+      }
+      a:link{
+        color:#ffffff;
+        text-decoration: none;
+      }
+      a:visited{
+        color:#ffffff;
+      }
+    }
+  }
+  #logo{
+    display:inline-block;
+    height:80%;
+    line-height: inherit;
+    cursor:pointer;
+    img{
+      width:auto;
+      height:100%;
+    }
+  }
+  #loginButton{
+    float:right;
+    margin-left:25px;
+    height:100%;
+    line-height:inherit;
+  }
+}
+#replace-body{
+  position:absolute;
+  top:0;
+  bottom:0;
+  padding:0;
+  width:100%;
+}
+
+

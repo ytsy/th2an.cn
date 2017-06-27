@@ -1,1 +1,12 @@
-require.config({baseUrl:"node_modules/",paths:{jquery:"jquery/dist/jquery.min",angular:"angular/angular.min",bootstrap:"bootstrap/dist/js/bootstrap.min"},shim:{bootstrap:["jquery"]}}),require(["../index"],function(){});
+require.config({
+    baseUrl: "./",
+    paths:{
+        "jquery":"node_modules/jquery/dist/jquery.min",
+        "angular":"node_modules/angular/angular.min",
+        "bootstrap":"node_modules/bootstrap/dist/js/bootstrap.min"
+    },
+    shim:{
+        "bootstrap":["jquery"]
+    }
+});
+require(['app/index-controller']);

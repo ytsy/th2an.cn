@@ -1,75 +1,34 @@
 <!doctype html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv = "X-UA-compatible" content="IE-edeg,chrome=1">
-        <title>T's Blog</title>
-        <link rel="stylesheet" type="text/css" href="index.min.css">
-        <link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap.min.css">
-    </head>
-    <body >
-        <nav class="clear">
-            <div id="logo">
-                <a href="http://localhost/">
-                    <img src="../images/logo2.png" alt="thblog">
-                </a>
-            </div>
-            <div id="loginButton">
-                <button class="btn btn-primary btn-middle" href="javaScript:void(0);">登录</button>
-            </div>
-            <ul>
-                <li><a href="javaScript:void(0);">首页</a></li>
-                <li><a href="javaScript:void(0);">研究</a></li>
-                <li><a href="javaScript:void(0);">随笔</a></li>
-                <li><a href="javaScript:void(0);">项目经验</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div id="around" class="around">
-                <div id="lists" class="lists">
-                    <a href="#" name="intro"></a>
-                    <a href="#" name="blog"></a>
-                    <a href="#" name="inspiration"></a>
-                </div>
-            </div>
-            <ul id = "scroll-ul">
-                <li class="intro active" id="intro" data-index="3">
-                    <section class="introBox">
-                        <h1>T's blog</h1>
-                        <p>不再做过去的自己，而去成为真正的自己。</p>
-                        <a target="_blank" href="https://github.com/ytsy/thblog" class="btn  btn-info btn-block btn-lg">
-                           <span class="glyphicon glyphicon-star"></span>
-                           <img src="../images/GitHub_Logo.png" class="githubImg">
-                        </a>
-                        <a target="_blank" href="https://ytsy.github.io" class="btn btn-info btn-block btn-lg">
-                            <span class="glyphicon glyphicon-list-alt"></span>  电子简历
-                        </a>
-                    </section>
-                </li>
-                <li class="blog" id="blog" data-index="2">
-                    <section class="blogBox">
-                        <h1>博采众长，客似云来</h1>
-                        <a href="https://github.com/ytsy/thblog"  class="btn btn-primary btn-lg btn-block">
-                            <span class="glyphicon glyphicon-home"></span>  查看文章
-                        </a>
-                    </section>
-                </li>
-                <li class="inspiration" id="inspiration" data-index="1">
-                    <section>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv = "X-UA-compatible" content="IE-edeg,chrome=1">
+    <title>T's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../../common/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../common/bootstrap/css/bootstrap.min.css">
+</head>
+<body >
+<nav class="clear">
+    <div id="logo">
+        <a href="http://localhost/">
+            <img src="../../images/logo2.png" alt="thblog">
+        </a>
+    </div>
+    <div id="loginButton">
+        <button class="btn btn-primary btn-middle" href="javaScript:void(0);">登录</button>
+    </div>
+    <ul>
+        <li><a href="/index">首页</a></li>
+        <li><a href="/study">研究</a></li>
+        <li><a href="/blog">随笔</a></li>
+        <li><a href="/projects">项目</a></li>
+    </ul>
+</nav>
+<main id="replace-body">
 
-                    </section>
-                </li>
-            </ul>
-        </main>
-        <footer>
-            <div class="footer-wrap clear">
-                <p class="WebInformation">
-                    粤ICP备16117696号-1
-                </p>
-                <p class="rightDeclare">版权所有&copy;TANYOU</p>
-            </div>
-        </footer>
-        <script src="../node_modules/requirejs/require.js" data-main="main.js" ></script>
-    </body>
+</main>
+
+<script src="../../node_modules/requirejs/require.js" data-main="/app/main.js" ></script>
+</body>
 </html>
