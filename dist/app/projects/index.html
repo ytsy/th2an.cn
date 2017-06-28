@@ -1,20 +1,29 @@
 <div class="pro-wrap .container-fluid">
-    <section class="col-md-8">
-        <ul>
-            <li>
-                <h1>重庆市桥隧信息管理系统</h1>
-                <h2>
+    <ul id="articleList">
+        <% if(projects.length>0){%>
+            <% for(var i=0;i<projects.length;i++){  %>
+            <% var com = new common(projects[i].startTime); %>
+        <li>
+            <section class="col-md-8">
+                <header>
+                    <h3><a href="javaScript:void(0);" id="article1"><%=projects[i].title%></a></h3>
+                </header>
+                <p>
+                    <span style="float:left;width:220px;height:220px;vertical-align: top;"><%-projects[i].image%></span>
+                    <%= projects[i].content %>
+                </p>
+            </section>
+            <aside  class="col-md-4 ">
+                <div class="timeWrap ">
+                  <div class="timeBox ">
+                        <p class="day"><%= com.getDay(); %></p>
+                        <p class="year"><%= com.getYear()+"-"+com.getMonth(); %></p>
+                  </div>
+                </div>
+            </aside>
+        </li>
+            <% } %>
+        <% } %>
+    </ul>
 
-                </h2>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h1>BDIFE2017</h1>
-            </li>
-        </ul>
-    </section>
-    <aside  class="col-md-4">
-
-    </aside>
 </div>

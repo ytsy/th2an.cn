@@ -22,6 +22,7 @@ define(['jquery'],function($){
         }else{
            op = dop;
         }
+
         $.ajax({
             url:op.url,
             success:function(result){
@@ -42,7 +43,7 @@ define(['jquery'],function($){
                 //去除各个模块的私有CSS与JS资源然后加载另外的私有资源
                 $("link[name='privateSrc']").remove();
                 $("script[name='privateSrc']").remove();
-                if(op.css.length>0){
+                if(op.css&&op.css.length>0){
                     op.css.forEach(function(url){
                         $("head").append("<link name='privateSrc' rel='stylesheet' type='text/css' href='"+url+"'>");
                     });
@@ -50,7 +51,7 @@ define(['jquery'],function($){
 
                 $(window).ready(function(){
                     //dom树构建完毕后加载js
-                    if(op.js.length>0){
+                    if(op.js&&op.js.length>0){
                         op.js.forEach(function(src){
                             $("body").append("<script name='privateSrc' type='text/javascript' src='"+src+".js'></script>");
                         });

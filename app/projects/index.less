@@ -5,7 +5,65 @@
   margin:0 auto;
   padding-top:40px;
 }
-.pro-wrap section{
-  margin-top:20px;
-  border:1px solid #c2ccd1;
+#articleList{
+  li{
+    height:300px;
+  }
+}
+.pro-wrap {
+  section,aside{
+    margin-top: 20px;
+    height:100%;
+    padding:0;
+  }
+  section{
+    border-radius:5px;
+    border: 1px solid #c2ccd1;
+    h3{margin:0;line-height:50px;}
+    header{
+      height:50px;
+
+      background-color:#c2ccd1;
+    }
+    p{
+      font-size:20px;
+      font-family:"宋体";
+    }
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
+  aside{
+    position:relative;
+    .timeWrap{
+      position:absolute;
+      left:50%;
+      top:50%;
+    }
+    .timeBox{
+      position:relative;
+      left: -50%;
+      top: -50px;
+      width: 100px;
+      height:100px;
+      text-align:center;
+      color:#ffffff;
+      background-color:rgb(212, 128, 106);
+      overflow:hidden;
+      .day{
+        font-size:2.5em;
+        font-weight:700;
+        height:60px;
+        line-height:70px;
+      }
+      .year{
+        font-size:1em;
+        height:30px;
+        background-color:rgb(244, 67, 54);
+        line-height:30px;
+      }
+    }
+  }
+
 }

@@ -4,12 +4,14 @@
   "description": "back-Front component",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^2.5.5",
     "angular": "^1.5.9",
-    "git": "^0.1.5",
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
+    "git": "^0.1.5",
     "less": "^2.7.1",
-    "requirejs": "^2.3.2"
+    "marked": "^0.3.6",
+    "requirejs": "^2.3.2",
+    "wangeditor": "^3.0.3"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",

@@ -5,10 +5,11 @@ gulp.task('default',['clean'],function(){
     gulp.run(['less2css','js','html','watch']);
     gulp.src('./common/bootstrap/**/*.*').pipe(gulp.dest('./dist/common/bootstrap'));
     gulp.src('./images/**/*.*').pipe(gulp.dest('./dist/images'));
+    gulp.src('./app/**/*.md').pipe(gulp.dest('./dist/app'));
 });
 //压缩js文件
 gulp.task('js',function(){
-    return gulp.src('./app/**/*.js',{
+    return gulp.src(['./app/**/*.js','./data/**/*.js','./common/**/*.js'],{
         base:'./'
     })//.pipe($.uglify())
       .pipe(gulp.dest('./dist'))
@@ -42,7 +43,7 @@ gulp.task('watch',function(){
         proxy:"localhost"
     });
    gulp.watch('./**/*.less',['less2css']);
-   gulp.watch('./app/**/*.js',['js']);
+   gulp.watch(['./app/**/*.js','./data/**/*.js','./common/**/*.js'],['js']);
    gulp.watch('./app/**/*.html',['html']);
 });
 gulp.task('clean',function(){

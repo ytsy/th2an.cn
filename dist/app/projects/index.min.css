@@ -4,7 +4,63 @@
   margin: 0 auto;
   padding-top: 40px;
 }
-.pro-wrap section {
+#articleList li {
+  height: 300px;
+}
+.pro-wrap section,
+.pro-wrap aside {
   margin-top: 20px;
+  height: 100%;
+  padding: 0;
+}
+.pro-wrap section {
+  border-radius: 5px;
   border: 1px solid #c2ccd1;
+}
+.pro-wrap section h3 {
+  margin: 0;
+  line-height: 50px;
+}
+.pro-wrap section header {
+  height: 50px;
+  background-color: #c2ccd1;
+}
+.pro-wrap section p {
+  font-size: 20px;
+  font-family: "宋体";
+}
+.pro-wrap section img {
+  width: 100%;
+  height: auto;
+}
+.pro-wrap aside {
+  position: relative;
+}
+.pro-wrap aside .timeWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.pro-wrap aside .timeBox {
+  position: relative;
+  left: -50%;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d4806a;
+  overflow: hidden;
+}
+.pro-wrap aside .timeBox .day {
+  font-size: 2.5em;
+  font-weight: 700;
+  height: 60px;
+  line-height: 70px;
+}
+.pro-wrap aside .timeBox .year {
+  font-size: 1em;
+  height: 30px;
+  background-color: #f44336;
+  line-height: 30px;
 }

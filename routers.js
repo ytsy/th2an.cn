@@ -1,6 +1,8 @@
 /**
  * 路由文件
  */
+var projectsRouter = require("./dist/app/projects/projects-router");
+var indexRouter  = require("./dist/app/index/index-router");
 module.exports = function(app,express) {
     var websit = {
         title:'tanyou blog',
@@ -35,28 +37,27 @@ module.exports = function(app,express) {
     app.use("/images",express.static(__dirname+"/dist/images"));
     app.use("/common",express.static(__dirname+"/dist/common"));
     app.use("/app",express.static(__dirname+"/dist/app"));
+    app.use("/data",express.static(__dirname+"/dist/data"));
+    app.use("/favicon.ico",express.static(__dirname+"/favicon.ico"));
 
     //拦截所有请求并添加判断
     app.get("*",function(req,res,next){
         if(req.xhr){
             next();//继续执行 这很重要,如果是xhr请求，只需要返回相应片段即可
         }else{
-            //若不是xhr请求，那么将返回模板页面，模板页面根据url加载数据
-            res.render("index",{websit:websit});
+            res.render("dist/app/index",{websit:websit});
+            //res.sendFile(__dirname+"/dist/app/index.html");
             //console.log("this is not xhr....");
         }
     }).get('/',function(req,res){
-        res.render("index",{websit:websit});
-    }).get('/index',function(req,res){
-        res.render("index/index");
-    }).get('/projects',function(req,res){
-        //res.render("projects/index");
-        res.render("404page",{title:"T's page not found!"});
+        res.render("dist/app/index",{websit:websit});
     }).get('/study',function(req,res){
-        res.render("404page",{title:"T's page not found!"});
+        res.render("dist/app/404page",{title:"T's page not found!"});
         //res.render("study/index");
     });
+    app.use("/index",indexRouter);
+    app.use("/projects",projectsRouter);
     app.use(function(req,res){
-        res.render("404page",{title:"T's page not found!"});
+        res.render("dist/app/404page",{title:"T's page not found!"});
     });
 };

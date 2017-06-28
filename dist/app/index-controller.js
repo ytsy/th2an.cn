@@ -1,7 +1,7 @@
 /**
  * Created by th on 2017/6/25.
  */
-define(["jquery","app/history"],function($,h){
+define(["jquery","history"],function($,h){
     $("nav ul").bind("click",function(event){
         event.preventDefault();//阻止默认事件
         if(event.target.nodeName === "A"){
