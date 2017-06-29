@@ -1,5 +1,5 @@
 require(["jquery","history"],function($,hs){
-    $("#articleList a").bind("click",function(){
+   /* $("#articleList a").bind("click",function(){
         var options = {
             url:"projects/article",
             title:"T's",
@@ -8,5 +8,5 @@ require(["jquery","history"],function($,hs){
         };
 
         hs.ajaxLoad(options);
-    })
+    })*/
 });

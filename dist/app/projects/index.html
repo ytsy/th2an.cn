@@ -4,16 +4,16 @@
             <% for(var i=0;i<projects.length;i++){  %>
             <% var com = new common(projects[i].startTime); %>
         <li>
-            <section class="col-md-8">
+            <section class="col-md-9">
                 <header>
                     <h3><a href="javaScript:void(0);" id="article1"><%=projects[i].title%></a></h3>
                 </header>
+                <span style="float:left;margin:10px;width:190px;height:190px;vertical-align: top;"><%-projects[i].image%></span>
                 <p>
-                    <span style="float:left;width:220px;height:220px;vertical-align: top;"><%-projects[i].image%></span>
-                    <%= projects[i].content %>
+                    <%- projects[i].content %>
                 </p>
             </section>
-            <aside  class="col-md-4 ">
+            <aside  class="col-md-3 ">
                 <div class="timeWrap ">
                   <div class="timeBox ">
                         <p class="day"><%= com.getDay(); %></p>
